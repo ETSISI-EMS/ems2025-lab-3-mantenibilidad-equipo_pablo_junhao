@@ -1,3 +1,5 @@
+[![Quality gate](http://c1.etsisi.upm.es:8888/api/project_badges/quality_gate?project=ETSISI-EMS_ems2025-lab-3-mantenibilidad-equipo_pablo_junhao_c921107e-f3f5-4cdf-9b61-7747b737c943&token=sqb_3a3bf55186fd7ad3074c442c13b63fa00754d68e)](http://c1.etsisi.upm.es:8888/dashboard?id=ETSISI-EMS_ems2025-lab-3-mantenibilidad-equipo_pablo_junhao_c921107e-f3f5-4cdf-9b61-7747b737c943)
+
 :point_right: PUT YOUR CI BADGE HERE
 
 # EMS-lab3 Maintainability
