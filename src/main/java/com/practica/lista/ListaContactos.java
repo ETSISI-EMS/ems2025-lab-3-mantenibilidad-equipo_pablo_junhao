@@ -53,23 +53,15 @@ public class ListaContactos {
 				salir=true;
 			}
 		}
-		/**
-		 * No hemos encontrado ninguna posición temporal, así que
-		 * metemos un nodo nuevo en la lista
-		 */
-
 		if(!encontrado) {
-			nodoNuevoNoPosicion(p, aux, ant);
+			nodoNuevoPosicionTemporalNoEncontrado(p, aux, ant);
 		}
 
 	}
 
-	private void nodoNuevoNoPosicion(PosicionPersona p, NodoTemporal aux, NodoTemporal ant){
-
+	private void nodoNuevoPosicionTemporalNoEncontrado(PosicionPersona p, NodoTemporal aux, NodoTemporal ant){
 			NodoTemporal nuevo = new NodoTemporal();
 			nuevo.setFecha(p.getFechaPosicion());
-
-
 			NodoPosicion npActual = nuevo.getListaCoordenadas();
 			NodoPosicion npAnt=null;
 			boolean npEncontrado = false;
@@ -89,7 +81,6 @@ public class ListaContactos {
 				else
 					npAnt.setSiguiente(npNuevo);
 			}
-
 			if(ant!=null) {
 				nuevo.setSiguiente(aux);
 				ant.setSiguiente(nuevo);
@@ -98,7 +89,6 @@ public class ListaContactos {
 				lista = nuevo;
 			}
 			this.size++;
-
 	}
 	
 	public int personasEnCoordenadas () {
