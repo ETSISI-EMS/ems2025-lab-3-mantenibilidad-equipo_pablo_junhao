@@ -62,8 +62,7 @@ public class ListaContactos {
 	private void nodoNuevoPosicionTemporalNoEncontrado(PosicionPersona p, NodoTemporal aux, NodoTemporal ant){
 			NodoTemporal nuevo = new NodoTemporal();
 			nuevo.setFecha(p.getFechaPosicion());
-			NodoPosicion npActual = nuevo.getListaCoordenadas();
-			NodoPosicion npAnt=null;
+			NodoPosicion npActual = nuevo.getListaCoordenadas(), npAnt=null;
 			boolean npEncontrado = false;
 			while (npActual!=null && !npEncontrado) {
 				if(npActual.getCoordenada().equals(p.getCoordenada())) {
